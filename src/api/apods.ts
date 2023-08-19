@@ -1,7 +1,6 @@
 import { Apod } from "../types";
 
-const API_KEY =
-  process.env.EXPO_PUBLIC_API_KEY || "3oZa58U81p2u2vfjaoBmjeIxGEgmGLdTn2twnxhw";
+const API_KEY = process.env.EXPO_PUBLIC_API_KEY || "DEMO_KEY";
 const BASE_URL = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`;
 
 export const fetchApods = async (): Promise<Apod[]> => {
@@ -15,3 +14,6 @@ export const fetchApods = async (): Promise<Apod[]> => {
     return [];
   }
 };
+
+
+//3oZa58U81p2u2vfjaoBmjeIxGEgmGLdTn2twnxhw
