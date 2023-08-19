@@ -6,10 +6,10 @@ import {
   View,
 } from "react-native";
 import apodJson from "../src/data/apods.json";
-import ApodListItem from "../src/components/ApodListItem";
+import ApodListItem from "@/components/ApodListItem";
 import { useEffect, useState } from "react";
 import { Apod } from "../src/types";
-import FullScreenImage from "../src/components/FullScreenImage";
+import FullScreenImage from "src/components/FullScreenImage";
 import { fetchApods } from "../src/api/apods";
 
 export default function Page() {
