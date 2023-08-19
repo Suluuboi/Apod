@@ -15,5 +15,14 @@ export const fetchApods = async (): Promise<Apod[]> => {
   }
 };
 
-
 //3oZa58U81p2u2vfjaoBmjeIxGEgmGLdTn2twnxhw
+
+export const fetchApod = async (date: string): Promise<Apod> => {
+  try {
+    const res = await fetch(`${BASE_URL}&date=${date}`);
+    return await res.json();
+  } catch (e) {
+    console.log("Error fetching pictures: ", e.message);
+    return null;
+  }
+};
